@@ -13,7 +13,30 @@
 		F3A29DD423478896006E83B1 /* Learn_MVVM_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3A29DD223478896006E83B1 /* Learn_MVVM_Swift.xcdatamodeld */; };
 		F3A29DD623478897006E83B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A29DD523478897006E83B1 /* Assets.xcassets */; };
 		F3A29DD923478897006E83B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A29DD723478897006E83B1 /* LaunchScreen.storyboard */; };
+		F3A29DFC23478E1E006E83B1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29DE323478D1D006E83B1 /* RxSwift.framework */; };
+		F3A29DFD23478E1E006E83B1 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29DE323478D1D006E83B1 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3A29DFF23478F22006E83B1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29DE223478D1D006E83B1 /* RxCocoa.framework */; };
+		F3A29E0023478F22006E83B1 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29DE223478D1D006E83B1 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3A29E0123478F38006E83B1 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29DF423478DE1006E83B1 /* RxRelay.framework */; };
+		F3A29E0223478F38006E83B1 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A29DF423478DE1006E83B1 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3A29E2723478FB3006E83B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A29E2623478FB3006E83B1 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3A29DFE23478E1E006E83B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3A29E0023478F22006E83B1 /* RxCocoa.framework in Embed Frameworks */,
+				F3A29DFD23478E1E006E83B1 /* RxSwift.framework in Embed Frameworks */,
+				F3A29E0223478F38006E83B1 /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F3A29DC623478895006E83B1 /* Learn-MVVM-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-MVVM-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +47,12 @@
 		F3A29DD523478897006E83B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A29DD823478897006E83B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3A29DDA23478897006E83B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A29DE223478D1D006E83B1 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		F3A29DE323478D1D006E83B1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		F3A29DF323478DE1006E83B1 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		F3A29DF423478DE1006E83B1 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		F3A29DF523478DE1006E83B1 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		F3A29E2623478FB3006E83B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A29DFF23478F22006E83B1 /* RxCocoa.framework in Frameworks */,
+				F3A29DFC23478E1E006E83B1 /* RxSwift.framework in Frameworks */,
+				F3A29E0123478F38006E83B1 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +74,7 @@
 			children = (
 				F3A29DC823478895006E83B1 /* Learn-MVVM-Swift */,
 				F3A29DC723478895006E83B1 /* Products */,
+				F3A29DE123478D1D006E83B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A29DC923478895006E83B1 /* AppDelegate.swift */,
+				F3A29E2623478FB3006E83B1 /* SceneDelegate.swift */,
 				F3A29DCD23478896006E83B1 /* ViewController.swift */,
 				F3A29DCF23478896006E83B1 /* Main.storyboard */,
 				F3A29DD523478897006E83B1 /* Assets.xcassets */,
@@ -65,6 +99,18 @@
 				F3A29DD223478896006E83B1 /* Learn_MVVM_Swift.xcdatamodeld */,
 			);
 			path = "Learn-MVVM-Swift";
+			sourceTree = "<group>";
+		};
+		F3A29DE123478D1D006E83B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3A29DF523478DE1006E83B1 /* RxBlocking.framework */,
+				F3A29DF423478DE1006E83B1 /* RxRelay.framework */,
+				F3A29DF323478DE1006E83B1 /* RxTest.framework */,
+				F3A29DE223478D1D006E83B1 /* RxCocoa.framework */,
+				F3A29DE323478D1D006E83B1 /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +123,8 @@
 				F3A29DC223478895006E83B1 /* Sources */,
 				F3A29DC323478895006E83B1 /* Frameworks */,
 				F3A29DC423478895006E83B1 /* Resources */,
+				F3A29DE023478AC9006E83B1 /* ShellScript */,
+				F3A29DFE23478E1E006E83B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +181,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3A29DE023478AC9006E83B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3A29DC223478895006E83B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +211,7 @@
 				F3A29DD423478896006E83B1 /* Learn_MVVM_Swift.xcdatamodeld in Sources */,
 				F3A29DCE23478896006E83B1 /* ViewController.swift in Sources */,
 				F3A29DCA23478895006E83B1 /* AppDelegate.swift in Sources */,
+				F3A29E2723478FB3006E83B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +357,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8YPT438X6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Learn-MVVM-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +379,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8YPT438X6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Learn-MVVM-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
